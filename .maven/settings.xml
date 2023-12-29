@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd" xmlns="http://maven.apache.org/SETTINGS/1.1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <servers>
+    <server>
+      <username>${mule.ee.username}</username>
+      <password>${mule.ee.password}</password>
+      <id>releases-ee</id>
+    </server>
+    <server>
+      <username>~~~Client~~~</username>
+      <password>090e28dbe59d4473a34b98f36a993105~?~f6D557Bab31C4a7b89Ffc2F14572b327</password>
+      <id>anypoint-exchange-v3</id>
+    </server>
+    <server>
+      <username>legendcorp</username>
+      <password>Simpson47</password>
+      <id>MuleRepository</id>
+    </server>
+    <server>
+      <username>Ankit_Dusad_PlanPartners</username>
+      <password>MuleRepository</password>
+      <id>PPMuleRepository</id>
+    </server>
+    <server>
+      <username>Ankit_Dusad_MCD_Level_2</username>
+      <password>AVPDapisero@131608</password>
+      <id>Mule</id>
+    </server>
+    <server>
+      <username>~~~Client~~~</username>
+      <password>e93fa47b7d284b1484872d3a86ff3f0f~?~9F2a044053974490ae1127c5d2DE785F</password>
+      <id>anypoint-connected-app</id>
+    </server>
+    <server>
+      <id>connectedapp</id>	
+      <username>~~~Client~~~</username>
+      <password>ca07d8461e044f4ba92642ececf9a1e1~?~1CfcE36C319e4A459870e0936b853b35</password>
+    </server>
+    <server>
+      <id>credentials</id>	
+      <username>Ankit_Dusad_GithubActions</username>
+      <password>AVPDapisero@131608</password>
+    </server>	
+  </servers>
+  <profiles>
+    <profile>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <repositories>
+        <repository>
+          <id>anypoint-exchange-v3</id>
+          <name>Anypoint Exchange</name>
+          <url>https://maven.anypoint.mulesoft.com/api/v3/maven</url>
+        </repository>
+      </repositories>
+      <id>standard-repositories</id>
+    </profile>
+    <profile>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <repositories>
+        <repository>
+          <releases />
+          <snapshots />
+          <id>MuleRepository</id>
+          <name>MuleRepository</name>
+          <url>https://repository.mulesoft.org/nexus-ee/content/repositories/releases-ee/</url>
+        </repository>
+      </repositories>
+      <id>mulesoft</id>
+    </profile>
+    <profile>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
+      <repositories>
+        <repository>
+          <id>anypoint-exchange-v2</id>
+          <name>Anypoint Exchange</name>
+          <url>https://maven.anypoint.mulesoft.com/api/v2/maven</url>
+        </repository>
+        <repository>
+          <id>mulesoft-releases</id>
+          <name>MuleSoft Releases Repository</name>
+          <url>https://repository.mulesoft.org/releases/</url>
+        </repository>
+      </repositories>
+      <id>mule-dev</id>
+    </profile>
+  </profiles>
+</settings>
