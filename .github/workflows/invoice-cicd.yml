@@ -6,7 +6,7 @@ name: CICD Workflow
 on:
   # Triggers the workflow on push or pull request events but only for the "feature/initial_development" branch
   push:
-    branches: [ "QA" ]
+    branches: [ "release" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
